@@ -1,0 +1,226 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/md_grey_200">
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_marginTop="@dimen/dp3"
+        android:layout_centerHorizontal="true"
+        >
+
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:elevation="@dimen/dp3"
+                android:paddingBottom="@dimen/dp30"
+                android:paddingTop="@dimen/dp30"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:padding="@dimen/dp5"
+                    android:text="Create a Foodish Account"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="@dimen/dp20"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/checkout_et_height"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/dp15"
+                        android:layout_height="@dimen/checkout_et_height">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:hint="@string/firstName"
+                            android:inputType="text"
+                            style="@style/AccountEditText"
+                            android:textColorHint="@color/colorPrimary"
+                            android:layout_marginLeft="@dimen/child_margin"
+                            android:layout_marginRight="@dimen/child_margin"
+                            android:paddingLeft="@dimen/et_padding_left"
+                            android:singleLine="true"
+                            android:id="@+id/etFirstName"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:layout_height="@dimen/checkout_et_height">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:hint="@string/lastName"
+                            android:inputType="text"
+                            style="@style/AccountEditText"
+                            android:textColorHint="@color/colorPrimary"
+                            android:layout_marginLeft="@dimen/child_margin"
+                            android:layout_marginRight="@dimen/child_margin"
+                            android:paddingLeft="@dimen/et_padding_left"
+                            android:singleLine="true"
+                            android:id="@+id/etLastName"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/checkout_et_height"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/dp15"
+                        android:layout_height="@dimen/checkout_et_height">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress"
+                            android:layout_marginLeft="@dimen/child_margin"
+                            android:layout_marginRight="@dimen/child_margin"
+
+                            android:paddingLeft="@dimen/et_padding_left"
+                            android:singleLine="true"
+                            android:id="@+id/etEmail"
+                            style="@style/AccountEditText"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:layout_height="@dimen/checkout_et_height">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:textColorHint="@color/colorPrimary"
+                            android:layout_marginLeft="@dimen/child_margin"
+                            android:layout_marginRight="@dimen/child_margin"
+                            android:paddingLeft="@dimen/et_padding_left"
+                            android:singleLine="true"
+                            android:id="@+id/etPassword"
+                            style="@style/AccountEditText"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/checkout_et_height">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:hint="Address"
+                        android:textColorHint="@color/colorPrimary"
+                        android:layout_marginLeft="@dimen/child_margin"
+                        android:layout_marginRight="@dimen/child_margin"
+                        android:paddingLeft="@dimen/et_padding_left"
+                        android:singleLine="true"
+                        android:id="@+id/etAddress"
+                        style="@style/AccountEditText"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/checkout_et_height">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:hint="City"
+                        android:textColorHint="@color/colorPrimary"
+                        android:layout_marginLeft="@dimen/child_margin"
+                        android:layout_marginRight="@dimen/child_margin"
+                        android:paddingLeft="@dimen/et_padding_left"
+                        android:singleLine="true"
+                        android:id="@+id/etCity"
+                        style="@style/AccountEditText"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_hiight"
+                android:text="@string/create_account"
+                android:layout_weight="2"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp20"
+                android:elevation="@dimen/dp3"
+                android:background="@drawable/login_bg"
+                android:textSize="15sp"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:id="@+id/tvCreateAccount"
+                />
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120dp"></View>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

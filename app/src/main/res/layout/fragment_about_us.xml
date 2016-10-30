@@ -1,0 +1,125 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <!-- TODO: Update blank fragment layout -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+
+        android:layout_height="350dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/feedback_item_height"
+        android:background="@color/md_grey_300"
+        android:textColor="@color/md_grey_500"
+        android:text="Contact Information"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp10"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:background="@color/white"
+        android:padding="@dimen/dp5"
+        android:id="@+id/llCall"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_call_black_24dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingLeft="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:text=""
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:background="@color/white"
+        android:padding="@dimen/dp5"
+        android:id="@+id/llLocation"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_place_black_24dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingLeft="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:text=""
+            />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feedback_item_height"
+            android:background="@color/md_grey_300"
+            android:textColor="@color/md_grey_500"
+            android:text="Timings"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="@dimen/dp5"
+            android:layout_height="@dimen/feedback_item_height">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dp10"
+                android:padding="@dimen/dp5"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Days"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp10"
+                android:padding="@dimen/dp5"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical|end"
+                android:text="Timing"
+                android:textColor="@color/colorPrimary"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorPrimary">@color/color_basic</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">#aeaeae</color>
+    <color name="color_blue">#5b7778</color>
+    <!--<color name="color_basic">#e52529</color>-->
+    <color name="color_basic">#673AB7</color>
+
+
+    <color name="black">#000000</color>
+    <item name="white" type="color">#ffffff</item>
+    <!--<color name="white">#ffffff</color>-->
+    <color name="green">#a0cd02</color>
+    <color name="card_bg">#ffffff</color>
+    <color name="app_bg">#F5F5F5</color>
+    <color name="text_color">@color/colorPrimary</color>
+    <!--<color name="koncept_red">#fb0200</color>-->
+    <color name="koncept_red2">#fb0200</color>
+    <color name="koncept_black">#000000</color>
+    <color name="koncept_grey">#464646</color>
+    <color name="koncept_green">#00ff00</color>
+    <color name="red">#e52c2f</color>
+    <!--d1d3d4   99F5F5F5-->
+    <color name="cart_bg">#99d1d3d4</color>
+    <color name="md_grey_200">#eeeeee</color>
+    <color name="md_grey_300">#E0E0E0</color>
+    <color name="md_grey_400">#BDBDBD</color>
+    <color name="md_grey_500">#9E9E9E</color>
+
+    <!--60%-->
+</resources>

@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+   >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp15"
+        >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_search_height"
+        android:background="@drawable/search_bg"
+        android:id="@+id/etSearch"
+        android:layout_marginTop="@dimen/dp3"
+        android:layout_marginBottom="@dimen/dp3"
+        android:layout_marginRight="@dimen/dp5"
+        android:layout_marginLeft="@dimen/dp5"
+        android:elevation="@dimen/dp3"
+        android:textSize="12sp"
+        android:hint="Search by Categories or Distance"
+        android:padding="@dimen/dp5"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+
+        android:drawableRight="@mipmap/ic_search_black_18dp"
+        />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pager_height"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            />
+
+
+
+
+
+
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp3"
+            android:elevation="@dimen/elevation"
+
+            android:layout_marginTop="@dimen/home_cat_item_margin_top"
+            android:clickable="true"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <!--android:background="@drawable/card"-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nearest Restaurants (under 50km)"
+                android:padding="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp5"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginLeft="@dimen/dp5"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tvName" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_below="@+id/tvName"
+                android:id="@+id/rvNewArrival"
+                android:layout_marginLeft="@dimen/dp5"
+                android:paddingTop="@dimen/dp5"
+                android:paddingBottom="@dimen/dp5"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="@dimen/view_all_height"
+                android:text="@string/view_all"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:textSize="@dimen/view_all_text_size"
+                android:background="@drawable/card_blue"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:id="@+id/btnMore" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:visibility="gone"
+            />
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp3"
+            android:elevation="@dimen/elevation"
+            android:id="@+id/rlRecent"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/home_cat_item_margin_top"
+            android:clickable="true"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <!--android:background="@drawable/card"-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/view_all_height"
+                android:text="Recent"
+                android:layout_marginTop="@dimen/dp5"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginLeft="@dimen/dp5"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tvName2" />
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#f1f1f1"-->
+            <!--android:layout_below="@+id/btnViewAll"-->
+            <!--android:layout_marginTop="@dimen/dp8"-->
+            <!--android:layout_marginBottom="@dimen/dp5"-->
+            <!--android:id="@+id/view"-->
+            <!--&gt;</View>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_below="@+id/tvName2"
+                android:id="@+id/rvRecent"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_height="@dimen/hor_view_height"></android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="@dimen/view_all_height"
+                android:text="@string/view_all"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:textSize="@dimen/view_all_text_size"
+                android:visibility="gone"
+                android:background="@drawable/card_blue"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:id="@+id/btnMoreRecent" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"></View>
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_search_white_36dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:id="@+id/fabSearch"
+        />
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp3"
+    android:elevation="@dimen/elevation"
+
+    android:layout_marginTop="@dimen/home_cat_item_margin_top"
+    android:clickable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--android:background="@drawable/card"-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/view_all_height"
+        android:text="Category"
+        android:layout_marginTop="@dimen/dp5"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="@dimen/dp5"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tvName" />
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#f1f1f1"-->
+        <!--android:layout_below="@+id/btnViewAll"-->
+        <!--android:layout_marginTop="@dimen/dp8"-->
+        <!--android:layout_marginBottom="@dimen/dp5"-->
+        <!--android:id="@+id/view"-->
+        <!--&gt;</View>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_below="@+id/tvName"
+        android:id="@+id/rvCat"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_height="@dimen/hor_view_height"></android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="@dimen/view_all_height"
+        android:text="@string/view_all"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp5"
+        android:textSize="@dimen/view_all_text_size"
+        android:background="@drawable/card_blue"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:id="@+id/btnViewAll" />
+</RelativeLayout>

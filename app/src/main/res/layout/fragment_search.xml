@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_search_height"
+        android:background="@drawable/search_bg"
+        android:id="@+id/etSearch"
+        android:layout_marginTop="@dimen/dp3"
+        android:layout_marginBottom="@dimen/dp3"
+        android:layout_marginRight="@dimen/dp5"
+        android:layout_marginLeft="@dimen/dp5"
+        android:elevation="@dimen/dp3"
+        android:textSize="12sp"
+
+        android:hint="Search by Categories or Distance"
+        android:padding="@dimen/dp5"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:singleLine="true"
+        android:drawableRight="@mipmap/ic_search_black_18dp"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_marginTop="@dimen/dp3"
+        android:layout_marginBottom="@dimen/dp3"
+        android:layout_marginRight="@dimen/dp5"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        ></Spinner>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvProducts"
+        android:padding="@dimen/dp3"
+        android:layout_below="@+id/etSearch"
+        android:background="@drawable/card"
+        ></android.support.v7.widget.RecyclerView>
+</LinearLayout>

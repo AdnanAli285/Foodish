@@ -1,0 +1,221 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/dp10"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp8"
+                android:textSize="18sp"
+
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:text="How can we help you?" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp8"
+
+                android:gravity="center_horizontal"
+                android:text="@string/feedback_text" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/checkout_et_height">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    style="@style/AccountEditText"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginLeft="@dimen/child_margin"
+                    android:layout_marginRight="@dimen/child_margin"
+                    android:paddingLeft="@dimen/et_padding_left"
+                    android:singleLine="true"
+                    android:id="@+id/etEmail"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="150dp"
+                android:layout_height="@dimen/checkout_et_height">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Write your feedback"
+                    style="@style/AccountEditText"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginLeft="@dimen/child_margin"
+                    android:layout_marginRight="@dimen/child_margin"
+                    android:paddingLeft="@dimen/et_padding_left"
+                    android:id="@+id/etFeedback"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+           <TextView
+               android:layout_width="wrap_content"
+               android:padding="@dimen/dp5"
+               android:layout_alignParentRight="true"
+               android:id="@+id/tvSend"
+               android:gravity="center"
+               android:paddingLeft="@dimen/dp10"
+               android:paddingRight="@dimen/dp10"
+               android:textColor="@color/black"
+               android:text="Send"
+               android:drawableLeft="@mipmap/ic_done_black_24dp"
+               android:layout_height="@dimen/dp50" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tvSend"
+                android:id="@+id/line1"
+                android:background="@color/md_grey_300"
+                ></View>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/feedback_item_height"
+                android:text="Model Number"
+                android:id="@+id/chbModelNo"
+                android:checked="true"
+                android:layout_below="@+id/line1"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/feedback_item_height"
+                android:text="Model Number"
+                android:id="@+id/tvModelNo"
+                android:layout_below="@+id/line1"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorPrimary"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/chbModelNo"
+                android:id="@+id/line2"
+                android:background="@color/md_grey_300"
+                ></View>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/feedback_item_height"
+                android:text="OS Version"
+                android:id="@+id/chbOsVersion"
+                android:checked="true"
+                android:layout_below="@+id/line2"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/feedback_item_height"
+                android:text="Os Version"
+                android:id="@+id/tvOsVersion"
+                android:layout_below="@+id/line2"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorPrimary"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/chbOsVersion"
+                android:id="@+id/line3"
+                android:background="@color/md_grey_300"
+                ></View>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/feedback_item_height"
+                android:text="App Version"
+                android:checked="true"
+                android:id="@+id/chbAppVersion"
+                android:layout_below="@+id/line3"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/feedback_item_height"
+                android:text="1.0.0"
+                android:id="@+id/tvAppVersion"
+                android:layout_below="@+id/line3"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/chbAppVersion"
+                android:id="@+id/line4"
+                android:background="@color/md_grey_300"
+                ></View>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/feedback_item_height"
+                android:text="Connection Method"
+                android:id="@+id/chbConnMethod"
+                android:checked="true"
+                android:layout_below="@+id/line4"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/feedback_item_height"
+                android:text="WiFi"
+                android:id="@+id/tvConnMethod"
+                android:layout_below="@+id/line4"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorPrimary"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

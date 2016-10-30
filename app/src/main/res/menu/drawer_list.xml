@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group1"
+        >
+
+        <item android:title="@string/home"
+            android:id="@+id/action_home"
+            android:icon="@mipmap/ic_home_black_24dp"
+            ></item>
+
+
+
+        <item android:title="@string/search"
+            android:id="@+id/search"
+            android:icon="@mipmap/ic_search_black_24dp"
+            ></item>
+
+
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+
+
+
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item android:title="About Us"
+            android:id="@+id/about_us"
+            android:visible="false"
+            android:icon="@mipmap/ic_place_black_24dp"
+            ></item>
+
+        <item android:title="@string/feedback"
+            android:id="@+id/feedback"
+            android:visible="false"
+            android:icon="@mipmap/ic_feedback_black_24dp"
+            ></item>
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group4">
+        <item android:title="@string/order_history"
+            android:id="@+id/order_history"
+            android:icon="@mipmap/ic_history_black_24dp"
+            ></item>
+        <item android:title="@string/sign_out"
+            android:icon="@mipmap/ic_assignment_return_black_24dp"
+            android:id="@+id/sign_out"
+            ></item>
+
+
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Foodish</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="view_all">More</string>
+    <string name="login">Login</string>
+    <string name="guest">Guest</string>
+    <string name="price">Price</string>
+
+
+    <string name="checkout_existing">Existing Customer</string>
+    <string name="checkout_newcustomer">New Customer</string>
+    <string name="checkout_guest">CheckOut as Guest</string>
+    <string name="cancel">Cancel</string>
+    <string name="bill_det">Billing Information</string>
+    <string name="mob_num">Mobile Number</string>
+    <string name="email">Email</string>
+    <string name="address">Shiping Address is same as Billing Address</string>
+    <string name="city">City</string>
+    <string name="pay_mode">Cash On Delivery</string>
+    <string name="same_ship">Shipping Details are same as Billing</string>
+    <string name="ship_det">Shipping Information</string>
+    <string name="clear_cart">Clear Cart</string>
+    <string name="about_us">ABOUT US</string>
+    <string name="locations">LOCATIONS</string>
+    <string name="del_info">DELIVERY INFORMATION</string>
+    <string name="refund_policy"><![CDATA[RETURN & REFUND POLICY]]></string>
+    <string name="terms"><![CDATA[TERMS & CONDITIONS]]></string>
+
+    <string name="electronics">Electronics</string>
+    <string name="kids_store">Kids Store</string>
+    <string name="women_store"><![CDATA[Women\'s Store]]></string>
+    <string name="men_store"><![CDATA[Men\'s Store]]></string>
+    <string name="office"><![CDATA[Office & Media]]></string>
+    <string name="home_living"><![CDATA[Home & Living]]></string>
+    <string name="more_stores"><![CDATA[More Stores]]></string>
+
+
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="bill_add">Address </string>
+    <string name="total_price">Total Price</string>
+    <string name="qty">Qty</string>
+
+    <string name="signup">Sign up</string>
+    <string name="logout">Logout</string>
+    <string name="prod_text">Product Code:</string>
+    <string name="post_code">Postal Code</string>
+    <string name="password">Password</string>
+    <string name="user">Sign In</string>
+    <string name="cart">Cart</string>
+
+
+    <string name="facebook_app_id">592238900955849</string>
+    <string name="feedback">Feedback</string>
+    <string name="order_history">Order History</string>
+    <string name="extras">Extras</string>
+    <string name="create_account">Create Account</string>
+    <string name="share">Share</string>
+    <string name="home">Home</string>
+    <string name="browse">Browse</string>
+    <string name="search">Search</string>
+    <string name="my_account">My Account</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="bill_add2">Billing Address Line 2</string>
+    <string name="province">Province</string>
+    <string name="terms_n_cond"><![CDATA[I agree with Terms & Conditions]]></string>
+    <string name="price_">Rs. 0.00</string>
+    <string name="thankyou">Thank You for your Order</string>
+    <string name="order_text">You will receive an email confirmation shortly</string>
+    <string name="feedback_text">Send us your customer feedback so we can improve the shopping experiance</string>
+
+    <string-array name="items_list">
+        <item>1 Year official warranty</item>
+        <item>2       </item>
+        <item>3       </item>
+        <item>4       </item>
+        <item>5       </item>
+        <item>6       </item>
+        <item>7       </item>
+        <item>8       </item>
+        <item>9       </item>
+        <item>11       </item>
+        <item>12       </item>
+        <item>13       </item>
+        <item>14       </item>
+        <item>15       </item>
+        <item>16       </item>
+        <item>17       </item>
+        <item>18       </item>
+        <item>19       </item>
+        <item>20       </item>
+    </string-array>
+
+</resources>

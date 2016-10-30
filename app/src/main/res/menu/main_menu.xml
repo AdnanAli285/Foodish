@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_cart"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        app:actionLayout="@layout/header_cart_layout"
+        android:title="Cart"
+        android:actionViewClass="android.support.v7.widget.SearchView"
+        ></item>
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="Search"
+        android:visible="false"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        ></item>
+    <item android:id="@+id/action_share"
+        android:icon="@mipmap/ic_share_white_24dp"
+        android:title="@string/share"
+        android:visible="false"
+        app:showAsAction="ifRoom"
+        ></item>
+    <item android:id="@+id/action_clear_cart"
+            android:title="@string/clear_cart"
+            app:showAsAction="never"
+        ></item>
+    <item android:id="@+id/action_signup"
+        android:title="@string/signup"
+        android:visible="false"
+        app:showAsAction="never"
+        ></item>
+    <item android:id="@+id/action_login"
+        android:title="@string/login"
+        app:showAsAction="never"
+        ></item>
+    <item android:id="@+id/action_logout"
+        android:title="@string/logout"
+        app:showAsAction="never"
+        ></item>
+</menu>

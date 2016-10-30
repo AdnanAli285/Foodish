@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/color_basic">
+
+    <ImageView
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp5"
+        android:padding="@dimen/dp5"
+        android:visibility="gone"
+        android:id="@+id/logo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp60"
+        android:layout_toRightOf="@+id/logo"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp10"
+        android:textSize="16sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/llUser"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="@dimen/dp5"
+
+        >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/tvFirstLetter"
+            android:background="@drawable/sign_in"
+            android:text="S"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_item_height"
+            android:id="@+id/tvUser"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tvFirstLetter"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_item_height"
+            android:textColor="@color/white"
+            android:id="@+id/tvUserEmail"
+            android:textSize="12sp"
+
+            android:layout_toRightOf="@+id/tvFirstLetter"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_below="@+id/tvUser"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_item_height"
+            android:text="Sign In or Register"
+            android:id="@+id/tvSignIn"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_below="@+id/tvFirstLetter"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

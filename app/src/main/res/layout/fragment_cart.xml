@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools">
+
+<android.support.v4.widget.NestedScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_200"
+    android:padding="5dp">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rvCart"
+            android:background="@color/md_grey_200"
+            android:layout_marginTop="@dimen/dp3"
+            android:layout_alignParentTop="true"
+            ></android.support.v7.widget.RecyclerView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/rvCart"
+        android:id="@+id/llTotal"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="Order Total"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/order_text_size"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp20"
+
+            android:id="@+id/order"
+            android:layout_marginBottom="@dimen/dp20"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="0.0"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/order_text_size"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp20"
+            android:layout_toRightOf="@+id/order"
+            android:gravity="center_vertical|right"
+            android:id="@+id/tvTotalPrice"
+
+            />
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/llTotal"
+        android:layout_height="@dimen/dp100"></View>
+
+
+
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_gravity="right|bottom"
+        android:id="@+id/fabCheckOut"
+        android:src="@drawable/icon_checkout"
+        />
+    </FrameLayout>
